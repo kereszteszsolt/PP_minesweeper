@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <script src="draw.js"></script>
+    <title>Minesweeper</title>
+</head>
+<body>
+<div class="container">
+    <div class="controls">
+        <label class="flex">Board size: <input id="size" type="number"  /></label>
+        <label class="flex">Number of mines: <input id="mines" type="number" /></label>
+        <div class="flex"><button id="new-game">new game</button></div>
+        <div class="flex"><button id="start-game">start game</button></div>
+    </div>
+    <h3 class="title">Minesweeper</h3>
+    <div class="subtext">
+        Mines Left: <span data-mine-count></span>
+    </div>
+    <div class="board"></div>
+</div>
+</body>
+</html>
